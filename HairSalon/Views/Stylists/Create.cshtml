@@ -1,0 +1,32 @@
+@{
+  Layout = "_Layout";
+}
+@model HairSalon.Models.Stylist
+
+<h1> Add a new Stylist </h1>
+@using (Html.BeginForm())
+{
+  <div class="form-group">
+    @Html.LabelFor(model => model.FirstName)
+    @Html.TextBoxFor(model => model.FirstName, new { type = "text", placeholder = "Bob", required = "required", @class = "form-control" })
+  </div>
+  
+  <div class="form-group">
+    @Html.LabelFor(model => model.LastName)
+    @Html.TextBoxFor(model => model.LastName, new { type = "text", placeholder = "Johnson", required = "required", @class = "form-control" })
+  </div>
+
+  <div class="form-group">
+    @Html.LabelFor(model => model.Email)
+    @Html.TextBoxFor(model => model.Email, new { type = "email", placeholder = "bob@gmail.com", required = "required", @class = "form-control" })
+  </div>
+
+  <div class="form-group">
+    @Html.LabelFor(model => model.YearsOfExperience)
+    @Html.TextBoxFor(model => model.YearsOfExperience, new { type = "number", min = "1", max = "20", placeholder = "10", required = "required", @class = "form-control" })
+  </div>
+
+  <input type="submit" class="btn btn-success" value="Add new Stylist" />
+}
+
+<p>@Html.ActionLink("View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-danger" })</p>

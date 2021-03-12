@@ -1,4 +1,7 @@
 @using HairSalon.Models;
+@{
+  Layout = "_Layout";
+}
 
 <h1> All Stylists </h1>
 <h3> Current Available Stylists: @Model.Count </h3>
@@ -10,7 +13,9 @@
 <ul>
   @foreach(Stylist stylist in Model)
   {
-    <li>@stylist.FirstName @stylist.LastName</li>
+    <li></li>
   }
 </ul>
 
+<p>@Html.ActionLink("Add a new Stylist", "Create")</p>
+<p>@Html.ActionLink("Go back to Homepage", "Index", "Home")</p>
