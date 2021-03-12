@@ -1,0 +1,12 @@
+@{
+  Layout = "_Layout";
+}
+
+<h1> Current Stylist Profile: @ViewBag.thisStylist.FirstName </h1>
+
+<h5> First Name: @ViewBag.thisStylist.FirstName </h5>
+<h5> Last Name: @ViewBag.thisStylist.LastName </h5>
+<h5> Email: @ViewBag.thisStylist.Email </h5>
+<h5> Num. Years of Experience: @ViewBag.thisStylist.YearsOfExperience </h5>
+
+<p>@Html.ActionLink("View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-danger" })</p>
