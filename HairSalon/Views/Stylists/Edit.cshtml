@@ -1,3 +1,4 @@
+@using HairSalon.Models;
 @model HairSalon.Models.Stylist
 @{
   Layout = "_Layout";
@@ -32,4 +33,5 @@
   <input type="submit" class="btn btn-success" value="Update" />
 }
 
-<p>@Html.ActionLink("Back - View all Cuisines", "Index")</p>
+<p>@Html.ActionLink($"Go Back to {@Model.FirstName}'s Profile", "Details", new { stylistId = @Model.StylistId }, new { @class = "btn btn-success" })</p>
+<p>@Html.ActionLink("Back - View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-info" })</p>
