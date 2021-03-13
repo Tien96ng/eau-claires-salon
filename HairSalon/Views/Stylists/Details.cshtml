@@ -1,3 +1,4 @@
+@using HairSalon.Models
 @{
   Layout = "_Layout";
 }
@@ -8,6 +9,24 @@
 <h5> Last Name: @ViewBag.thisStylist.LastName </h5>
 <h5> Email: @ViewBag.thisStylist.Email </h5>
 <h5> Num. Years of Experience: @ViewBag.thisStylist.YearsOfExperience </h5>
+
+@if (ViewBag.clients.Count == 0)
+{
+  <h3> No Current Clients </h3>
+}
+
+@if (ViewBag.clients.Count > 0) {
+  <h3> Current Client List: </h3>
+  <h6> Select the client for more info </h6>
+
+  <ol>
+  @foreach (Client client in ViewBag.clients)
+  {
+    <li>@client.FirstName @client.LastName</li>
+  }
+  </ol>
+}
+
 
 
 <p>@Html.ActionLink($"Edit Stylist: {@ViewBag.thisStylist.FirstName}", "Edit", new { stylistId = ViewBag.thisStylist.StylistId }, new { @class = "btn btn-warning" })</p>
