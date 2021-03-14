@@ -3,7 +3,7 @@
 }
 @model HairSalon.Models.Client
 
-<h1> Add a new Stylist </h1>
+<h1> Add a new Client </h1>
 @using (Html.BeginForm())
 {
   <div class="form-group">
@@ -18,8 +18,8 @@
 
   <div class="form-group">
     @Html.LabelFor(model => model.Extrovert)
-    @Html.RadioButton("Extrovert", true)Yes 
-    @Html.RadioButton("Extrovert", false)No 
+    @Html.RadioButton("Extrovert", true) Yes 
+    @Html.RadioButton("Extrovert", false) No 
   </div>
 
   <div class="form-group">
@@ -27,7 +27,12 @@
     @Html.DropDownList("stylistId")
   </div>
 
-  <input type="submit" class="btn btn-success" value="Add new Stylist" />
+  <div class="left-container">
+    <input type="submit" class="btn btn-success" value="Add new Stylist" />
+  </div>
+  
 }
 
-<p>@Html.ActionLink("View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-info" })</p>
+<div class="right-container edit-page">
+  <p>@Html.ActionLink("View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-info" })</p>
+</div>

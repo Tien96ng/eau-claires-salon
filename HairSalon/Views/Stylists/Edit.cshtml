@@ -35,8 +35,13 @@
     @Html.TextBoxFor(model => model.YearsOfExperience, new { type = "number", min = "1", max = "20", placeholder = "10", required = "required", @class = "form-control" })
   </div>
 
-  <input type="submit" class="btn btn-success" value="Update" />
+  <div class="left-container">
+    <input type="submit" class="btn btn-success btn-lg" value="Update" />
+  </div>
 }
 
-<p>@Html.ActionLink($"Go Back to {@Model.FirstName}'s Profile", "Details", new { stylistId = @Model.StylistId }, new { @class = "btn btn-danger" })</p>
-<p>@Html.ActionLink("Back - View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-info" })</p>
+<div class="right-container edit-page">
+  <p>@Html.ActionLink($"Go Back to {@Model.FirstName}'s Profile", "Details", new { stylistId = @Model.StylistId }, new { @class = "btn btn-danger" })</p>
+  <p>@Html.ActionLink("Back - View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-info" })</p>  
+</div>
+
