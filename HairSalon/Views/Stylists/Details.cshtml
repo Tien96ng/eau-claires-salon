@@ -5,29 +5,44 @@
 
 <h1> Current Stylist Profile: @ViewBag.thisStylist.FirstName </h1>
 
-<h5> First Name: @ViewBag.thisStylist.FirstName </h5>
-<h5> Last Name: @ViewBag.thisStylist.LastName </h5>
-<h5> Email: @ViewBag.thisStylist.Email </h5>
-<h5> Speciality: @ViewBag.thisStylist.Speciality </h5>
-<h5> Num. Years of Experience: @ViewBag.thisStylist.YearsOfExperience </h5>
 
-@if (ViewBag.clients.Count == 0)
-{
-  <h3> No Current Clients </h3>
-}
 
-@if (ViewBag.clients.Count > 0) {
-  <h3> Current Client List: </h3>
-  <h6> Select the client for more info </h6>
 
-  <ol>
-  @foreach (Client client in ViewBag.clients)
-  {
-    <li>@client.FirstName @client.LastName</li>
-  }
-  </ol>
-}
+<div class="row">
+  <div class="col-sm-4">
+    <div class="left-container">
+      <h5> <span class="detail">First Name:</span> @ViewBag.thisStylist.FirstName </h5>
+      <h5> <span class="detail">Last Name:</span> @ViewBag.thisStylist.LastName </h5>
+      <h5> <span class="detail">Email:</span> @ViewBag.thisStylist.Email </h5>
+      <h5> <span class="detail">Speciality:</span> @ViewBag.thisStylist.Speciality </h5>
+      <h5> <span class="detail">Num. Years of Experience:</span> @ViewBag.thisStylist.YearsOfExperience </h5>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    @if (ViewBag.clients.Count == 0)
+      {
+        <h3 class="none"> No Current Clients </h3>
+      }
 
-<p>@Html.ActionLink($"Edit Stylist: {@ViewBag.thisStylist.FirstName}", "Edit", new { stylistId = ViewBag.thisStylist.StylistId }, new { @class = "btn btn-warning" })</p>
-<p>@Html.ActionLink($"Delete Stylist: {@ViewBag.thisStylist.FirstName}", "Delete", new { stylistId = ViewBag.thisStylist.StylistId }, new { @class = "btn btn-danger" })</p>
-<p>@Html.ActionLink("View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-info" })</p>
+      <div class="client-list">
+        @if (ViewBag.clients.Count > 0) {
+          <h3> Current Client List: </h3>
+
+          <ol>
+          @foreach (Client client in ViewBag.clients)
+          {
+            <li>@client.FirstName @client.LastName</li>
+          }
+          </ol>
+        }
+      </div>
+      
+  </div>
+  <div class="col-sm-4">
+    <div class="right-container">
+      <p>@Html.ActionLink($"Edit Stylist: {@ViewBag.thisStylist.FirstName}", "Edit", new { stylistId = ViewBag.thisStylist.StylistId }, new { @class = "btn btn-warning" })</p>
+      <p>@Html.ActionLink($"Delete Stylist: {@ViewBag.thisStylist.FirstName}", "Delete", new { stylistId = ViewBag.thisStylist.StylistId }, new { @class = "btn btn-danger" })</p>
+      <p>@Html.ActionLink("View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-info" })</p>
+    </div>
+  </div>
+</div>
