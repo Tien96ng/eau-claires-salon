@@ -4,23 +4,28 @@
 }
 
 <h1> All Stylists </h1>
-<h3> Current Available Stylists: @Model.Count </h3>
-@if(@Model.Count == 0)
-{
-  <h3> No Stylists Available</h3>
-}
 
-<ul>
-  @foreach(Stylist stylist in Model)
+<div class="left-container">
+  <h3> Current Available Stylists: @Model.Count </h3>
+  @if(@Model.Count == 0)
   {
-    <li>@Html.ActionLink($"{stylist.FirstName} {stylist.LastName}", "Details", new { stylistId = stylist.StylistId })</li>
+    <h3> No Stylists Available</h3>
   }
-</ul>
 
-@if(@Model.Count > 0)
-{
-  <p>@Html.ActionLink("Add a New Client", "Create", "Clients")</p>
-}
+  <ul>
+    @foreach(Stylist stylist in Model)
+    {
+      <li>@Html.ActionLink($"{stylist.FirstName} {stylist.LastName}", "Details", new { stylistId = stylist.StylistId })</li>
+    }
+  </ul>
+</div>
 
-<p>@Html.ActionLink("Add a New Stylist", "Create")</p>
-<p>@Html.ActionLink("Go back to Homepage", "Index", "Home")</p>
+<div class="right-container">
+  @if(@Model.Count > 0)
+  {
+    <p>@Html.ActionLink("Add a New Client", "Create", "Clients", null, new { @class = "btn btn-primary" })</p>
+  }
+
+  <p>@Html.ActionLink("Add a New Stylist", "Create", "Stylists", null, new { @class = "btn btn-success" })</p>
+  <p>@Html.ActionLink("Go back to Homepage", "Index", "Home", null, new { @class = "btn btn-info" })</p>
+</div>

@@ -1,5 +1,6 @@
 body {
   background-color: darkgrey;
+  
 }
 
 #footer {
@@ -17,6 +18,7 @@ body {
   margin-top: 100px;
   border-radius: 10px;
   background-color:rgba(250, 235, 215, .5);
+  cursor: url('https://c0.klipartz.com/pngpicture/317/713/gratis-png-tijeras-iconos-de-la-computadora-tijeras-icono-de-las-tijeras.png') auto;
 }
 
 h1 {
@@ -25,17 +27,24 @@ h1 {
 
 .btn-lg {
   position:relative;
-    top:50%;
-    margin: 50px 0px 10px 0px;
-    left:40%;
-    background: whitesmoke;
-    color: black;
+  top:50%;
+  margin: 50px 0px 10px 0px;
+  left:40%;
+  background: whitesmoke;
+  color: black;
 }
 
 .left-container {
   float: left;
+  padding: 0px 0px 20px 20px;
 }
 
 .right-container {
   float: right;
+  padding: 20px 20px 20px 450px;
+}
+
+ul {
+  list-style-type: circle;
+  font-size: large;
 }
