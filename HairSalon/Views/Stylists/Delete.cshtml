@@ -4,13 +4,21 @@
 @using HairSalon.Models;
 @model HairSalon.Models.Stylist
 
-<h2>Are you sure you want to delete this Stylist?</h2>
+<h1>Are you sure you want to delete this Stylist?</h1>
 
-<h4>Stylist: @Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName) </h4>
-@using (Html.BeginForm())
-{
-  <input type="submit" class="btn btn-danger" value="Delete Selected Stylist" />
-}
+<h4><span class="detail">Stylist:</span> @Html.DisplayFor(model => model.FirstName) @Html.DisplayFor(model => model.LastName) </h4>
 
-<p>@Html.ActionLink($"Go Back to {@Model.FirstName}'s Profile", "Details", new { stylistId = @Model.StylistId }, new { @class = "btn btn-success" })</p>
-<p>@Html.ActionLink("Back - View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-info" })</p>
+<div class="row delete-row">
+  <div class="col-sm-4">
+    @using (Html.BeginForm())
+    {
+      <input type="submit" class="btn btn-danger" value="Delete Selected Stylist" />
+    }
+  </div>
+  <div class="col-sm-4">
+    <p>@Html.ActionLink($"Go Back to {@Model.FirstName}'s Profile", "Details", new { stylistId = @Model.StylistId }, new { @class = "btn btn-success" })</p>
+  </div>
+  <div class="col-sm-4">
+    <p>@Html.ActionLink("Back - View all Stylists", "Index", "Stylists", null, new { @class = "btn btn-info" })</p>
+  </div>
+</div>
