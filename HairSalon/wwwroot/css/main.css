@@ -1,0 +1,41 @@
+body {
+  background-color: darkgrey;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  text-align: center;
+}
+
+.app-container {
+  width: 1200px;
+  border: 2px solid black;
+  margin-top: 100px;
+  border-radius: 10px;
+  background-color:rgba(250, 235, 215, .5);
+}
+
+h1 {
+  text-align: center;
+}
+
+.btn-lg {
+  position:relative;
+    top:50%;
+    margin: 50px 0px 10px 0px;
+    left:40%;
+    background: whitesmoke;
+    color: black;
+}
+
+.left-container {
+  float: left;
+}
+
+.right-container {
+  float: right;
+}
