@@ -23,7 +23,7 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
 ## Setup / Installation Requirements
 
 <details>
-<summary> Installing C# and .NET <summary>
+<summary> Install C# and .NET </summary>
 
 1. _WINDOWS: Download the [64-bit .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.102-windows-x64-installer). Clicking these links will prompt a **.exe** file download from Microsoft._
 2. _MAC: Download this [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.100-macos-x64-installer). Clicking this link will prompt a **.pkg** file download from Microsoft._
