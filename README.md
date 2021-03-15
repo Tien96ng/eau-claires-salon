@@ -22,7 +22,9 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
 
 ## Setup / Installation Requirements
 
-### Installing C# and .NET:
+<details>
+<summary> ### Installing C# and .NET: <summary>
+
   **1a.** _WINDOWS: Download the [64-bit .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.102-windows-x64-installer). Clicking these links will prompt a **.exe** file download from Microsoft_.\
   \
   **1b.** _MAC: Download this [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.100-macos-x64-installer). Clicking this link will prompt a **.pkg** file download from Microsoft_.\
@@ -30,16 +32,30 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
   **2.** _Open the file and follow the steps provided by the installer for your OS_.\
   \
   **3.** _Confirm the installation is successful by opening a new Windows PowerShell OR Max Terminal window and running the command dotnet --version_.
+</details>
 
-### Installing MySQL and MySQL WorkBench ###
+<details>
+<summary> ### Installing MySQL and MySQL WorkBench ### </summary>
+
 #### Windows Install ####
 1. _WINDOWS: Download the [MySQL](https://downloads.mysql.com/archives/get/p/25/file/mysql-installer-web-community-8.0.19.0.msi). Use the **No thanks**, just start my download link._
 
+
 #### MacOS Install ####
 1. _MAC: Download the [MySQL](https://dev.mysql.com/downloads/file/?id=484914). Clicking this link will prompt a **.dmg** file download from Microsoft._
+2. _Follow along with the **Installer** until you reach the **Configuration** page._
+3. _In the Configuation page, first **Use Legacy Password Encryption**._
+4. _Set password to what you desire - **NOTE: Please remember your password**!_
+5. _Click Finish._
+6. _Open your terminal and enter the follow command: **echo 'export PATH="/usr/local/mysql/bin:$PATH"' >> ~/.bash_profile**_
+7. _Type **source ~/.bash_profile** (or restart the terminal) in order to actually verify that MySQL was installed._
+8. _Verify MySQL is installed by opening the terminal and enter in the command, replacing the placeholder with your password: **mysql -uroot -p[PASSWORD]**_
+9. _Download and Install [MySQL WorkBench](https://dev.mysql.com/downloads/file/?id=484391) to Applications folder._
 
+</details>
 
-### Local Environment Setup
+<details>
+<summary> ### Local Environment Setup </summary>
 1. _Clone the repo or download the ZIP file of the repo._
 2. _Navigate to the main directory of the repo._
 3. _Open the repo's main directory in the Code Editor of your choice._
@@ -49,6 +65,7 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
 7. _The App should now be running Localhost:5000._
 8. _Open any web browser app and go to **http://localhost:5000/** to open your app._
 8. _To stop the app during any moment, press the following combination of keys in your terminal: _**CTRL**_ + _**C**_._
+</details>
 
 ## Known Bugs
 
