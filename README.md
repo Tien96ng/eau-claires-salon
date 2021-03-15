@@ -78,14 +78,30 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
 <summary> Local Environment Setup </summary>
 
 1. _Clone the repo or download the ZIP file of the repo._
-2. _Navigate to the main directory of the repo._
-3. _Open the repo's main directory in the Code Editor of your choice._
-4. _Run the **FIRST** command in your terminal within the repo's main directory (Example: /VendorOrderTracker/): __"dotnet restore"__._
-5. _Run the **SECOND** command in your terminal within the repo's main directory (Example: /VendorOrderTracker/): __"dotnet build"__._
-6. _Run the **THIRD** command in your terminal within the same main directory (Example: /VendorOrderTracker/): __"dotnet run"__._
-7. _The App should now be running Localhost:5000._
-8. _Open any web browser app and go to **http://localhost:5000/** to open your app._
-8. _To stop the app during any moment, press the following combination of keys in your terminal: _**CTRL**_ + _**C**_._
+2. _Open MySQL WorkBench and select Local Instance._
+3. _Select **Data Import/Restore** in the Admin Tab in the Navigator._
+4. _Select **Import from Self-Contained File**._
+5. _Find and select **tien_nguyen.sql**_
+6. _Select **New..** under the Default Schema for import._
+7. _Enter **tien_nguyen.sql** and click Ok._
+8. _Click **Start Import** to import the database._
+9. _Create a new file in the **/HairSalon** directory and named **appsettings.json**_
+10. _Copy and paste the follow but **ENTER YOUR OWN PASSWORD**:_
+```
+{
+  "ConnectionStrings": {
+      "DefaultConnection": "Server=localhost;Port=[PORT OF SERVER];database=tien_nguyen;uid=root;pwd=[PASSWORD OF SERVER];"
+  }
+}
+```
+11. _Navigate to the main directory of the repo._
+12. _Open the repo's main directory in the Code Editor of your choice._
+13. _Run the **FIRST** command in your terminal within the repo's main directory (Example: /VendorOrderTracker/): __"dotnet restore"__._
+14. _Run the **SECOND** command in your terminal within the repo's main directory (Example: /VendorOrderTracker/): __"dotnet build"__._
+15. _Run the **THIRD** command in your terminal within the same main directory (Example: /VendorOrderTracker/): __"dotnet run"__._
+16. _The App should now be running Localhost:5000._
+17. _Open any web browser app and go to **http://localhost:5000/** to open your app._
+18. _To stop the app during any moment, press the following combination of keys in your terminal: _**CTRL**_ + _**C**_._
 
 </details>
 
