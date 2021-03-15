@@ -25,13 +25,10 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
 <details>
 <summary> Installing C# and .NET <summary>
 
-  **1a.** _WINDOWS: Download the [64-bit .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.102-windows-x64-installer). Clicking these links will prompt a **.exe** file download from Microsoft_.\
-  \
-  **1b.** _MAC: Download this [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.100-macos-x64-installer). Clicking this link will prompt a **.pkg** file download from Microsoft_.\
-  \
-  **2.** _Open the file and follow the steps provided by the installer for your OS_.\
-  \
-  **3.** _Confirm the installation is successful by opening a new Windows PowerShell OR Max Terminal window and running the command dotnet --version_.
+1. _WINDOWS: Download the [64-bit .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.102-windows-x64-installer). Clicking these links will prompt a **.exe** file download from Microsoft._
+2. _MAC: Download this [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.100-macos-x64-installer). Clicking this link will prompt a **.pkg** file download from Microsoft._
+3. _Open the file and follow the steps provided by the installer for your OS._
+4. _Confirm the installation is successful by opening a new Windows PowerShell OR Max Terminal window and running the command dotnet --version._
 
 </details>
 
@@ -78,7 +75,7 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
 </details>
 
 <details>
-<summary> </summary>
+<summary> Local Environment Setup </summary>
 
 1. _Clone the repo or download the ZIP file of the repo._
 2. _Navigate to the main directory of the repo._
