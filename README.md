@@ -110,14 +110,15 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
 * _None at the moment (3/12/2021)_
 
 ## Project Goals / Further Exploration
-- _Add more properties for each Model._
-- _Add the ability to update Vendor or Order details._
-- _Add the ability for Pierre to note whether an order has been paid for or not._
-_ _Add search functionality to your app._
+- Include a form where employees may search for a stylist by name. Display a list of all results.
+- Include a form where employees may also search for a client by name. Display a list of all results.
+- Add a feature for adding an appointment to a client.
+- Add a feature for adding an appointment to a stylist. Add a check to make sure the stylist does not have any conflicting appointments.
+- Add a feature for keeping track of how much each stylist was paid for each appointment.
 
 ## License
 _This software is licensed under the MIT license_\
 Copyright (c) 2021 __Tien Nguyen__
 
 ## Contact Information
-_<Tien96ng@github.com>_
+_<Tien96ng@gmail.com>_
