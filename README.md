@@ -23,7 +23,7 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
 ## Setup / Installation Requirements
 
 <details>
-<summary> ### Installing C# and .NET: <summary>
+<summary> Installing C# and .NET <summary>
 
   **1a.** _WINDOWS: Download the [64-bit .NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.102-windows-x64-installer). Clicking these links will prompt a **.exe** file download from Microsoft_.\
   \
@@ -32,14 +32,37 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
   **2.** _Open the file and follow the steps provided by the installer for your OS_.\
   \
   **3.** _Confirm the installation is successful by opening a new Windows PowerShell OR Max Terminal window and running the command dotnet --version_.
+
 </details>
 
 <details>
-<summary> ### Installing MySQL and MySQL WorkBench ### </summary>
+<summary>  MySQL Installation </summary>
 
 #### Windows Install ####
 1. _WINDOWS: Download the [MySQL](https://downloads.mysql.com/archives/get/p/25/file/mysql-installer-web-community-8.0.19.0.msi). Use the **No thanks**, just start my download link._
+2. _Click **"Yes"** if prompted to update and accept license terms._
+3. _Choose Custom setup type._
+4. _When prompted to Select Products and Features, choose the following:_
+- _Check the box that says **"Enable the Select Features page to customize product features"**._
+- _MySQL Server 8.0.19 (This will be under "MySQL Servers > MySQL Server > MySQL Server 8.0")._
+- _MySQL Workbench 8.0.19 (This will be under "Applications > MySQL Workbench > MySQL Workbench 8.0")_
 
+5. _Select **"Next"**, then **"Execute"**. Wait for download and installation. (This can take a few minutes.)_
+6. _Advance through Configuration as follows:_
+- _High Availability set to **"Standalone"**._
+- _The **"Defaults are OK"** under Type and Networking._
+- _Authentication Method set to **Use Legacy Authentication** Method._
+- _Set password **AND REMEMBER IT**._
+- _Defaults are OK under Windows Service. Make sure that checkboxes are checked for the options **"Configure MySQL Server as a Windows Service"** and **"Start the MySQL Server at System Startup"**._
+- _Under Run Windows Service as..., the **"Standard System Account"** should be selected._
+
+7. _Complete Installation Process._
+8. _Open the Control Panel and visit System and **"Security > System"**._
+9. _Select **"Change Settings"** and a pop-up window will display._ 
+10. _Select the tab **"Advanced"** and select the **"Environment Variables"** button._
+11. _Within the System Variables navigator window, select PATH..., click Edit..., and then New._
+12. _Add the exact location of your MySQL installation, and click OK. (For Example, C:\Program Files\MySQL\MySQL Server 8.0\bin)._
+13. _verify installation by opening Windows PowerShell and entering the command mysql -uroot **-p[PASSWORD]**_
 
 #### MacOS Install ####
 1. _MAC: Download the [MySQL](https://dev.mysql.com/downloads/file/?id=484914). Clicking this link will prompt a **.dmg** file download from Microsoft._
@@ -55,7 +78,8 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
 </details>
 
 <details>
-<summary> ### Local Environment Setup </summary>
+<summary> </summary>
+
 1. _Clone the repo or download the ZIP file of the repo._
 2. _Navigate to the main directory of the repo._
 3. _Open the repo's main directory in the Code Editor of your choice._
@@ -65,6 +89,7 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
 7. _The App should now be running Localhost:5000._
 8. _Open any web browser app and go to **http://localhost:5000/** to open your app._
 8. _To stop the app during any moment, press the following combination of keys in your terminal: _**CTRL**_ + _**C**_._
+
 </details>
 
 ## Known Bugs
