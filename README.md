@@ -32,10 +32,10 @@ _A MVC web application for "Eau Claire's Salon" is used as an operations trackin
   **3.** _Confirm the installation is successful by opening a new Windows PowerShell OR Max Terminal window and running the command dotnet --version_.
 
 ### Installing MySQL and MySQL WorkBench ###
-## Windows Install ##
+#### Windows Install ####
 1. _WINDOWS: Download the [MySQL](https://downloads.mysql.com/archives/get/p/25/file/mysql-installer-web-community-8.0.19.0.msi). Use the **No thanks**, just start my download link._
 
-## MacOS Install ##
+#### MacOS Install ####
 1. _MAC: Download the [MySQL](https://dev.mysql.com/downloads/file/?id=484914). Clicking this link will prompt a **.dmg** file download from Microsoft._
 
 
